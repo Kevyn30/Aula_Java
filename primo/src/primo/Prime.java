@@ -2,7 +2,7 @@ package primo;
 
 import java.util.Scanner;
 
-public class contagem {
+public class Prime {
 	public static void main(String[] arg) {
 		int num, rest, prime = 0;
 

@@ -10,7 +10,7 @@ public class NumberGuesser {
 	}
 
 	private static void drawNumber() {
-		int num,tentativa;
+		int num,attempt;
 
 		Random dig = new Random();
 
@@ -21,26 +21,26 @@ public class NumberGuesser {
 		System.out.print("Digite para tentar acertar o número.");
 
 		num = inputScanner.nextInt();
-		tentativa=1;
-		
+
+		attempt=1;
+		String approximation = "";
 		while(num != randomNumber) {
+			System.out.println("-----------------------------------------------------");
 			if(num<randomNumber) {
-				System.out.println("-----------------------------------------------------");
-				System.out.println("tente mais uma vez. O número é maior que "+ num+". ");
-				num = inputScanner.nextInt();
-				tentativa++;
+				approximation = "maior";
 			}
 			if(num>randomNumber) {
-				System.out.println("-----------------------------------------------------");
-				System.out.println("tente mais uma vez. O número é menor que "+ num+". ");
-				num = inputScanner.nextInt();
-				tentativa++;
+				approximation = "menor";
 			}
-		
+			System.out.println("tente mais uma vez. O número é "+ approximation + " que "+ num+". ");
+			num = inputScanner.nextInt();
+
+			attempt++;
 		}
 		System.out.println("Você ganhou!!! Parabens( ◡̀_◡́)ᕤ");
 		System.out.println("");
-		System.out.println("Tentativas realizadas: "+tentativa);
+		System.out.println("Tentativas realizadas: "+ attempt);
+
 		
 	}
 

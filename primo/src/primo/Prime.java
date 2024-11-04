@@ -8,28 +8,26 @@ public class Prime {
 	}
 
 	public static void isPrime() {
-		int num, rest, prime=0;
+		int num, prime=0;
 		
-		Scanner dig = new Scanner(System.in);
+		Scanner inputScanner = new Scanner(System.in);
 		
-		System.out.print("Digite algum número pra saber se é primo ou n.");
+		System.out.print("Digite algum número pra saber se é primo ou n. ");
 		
-		num = dig.nextInt();
+		num = inputScanner.nextInt();
 		
-		rest = num;
-		for (int i = num; i <= rest; i++) {
 
-			for (int j = 1; j <= i; j++) {
-				if (i % j == 0) {
+			for (int cont = 1; cont <= num; cont++) {
+				if (num % cont == 0) {
 					prime++;
 				}
 				
 			}
 			if (prime == 2) {
-				System.out.println("O número " + i + " é primo");
+				System.out.println("O número " + num + " é primo");
 			} else {
-				System.out.println("Número " + i + " não é primo");
+				System.out.println("Número " + num + " não é primo");
 			}
-		}
+		
 	}
 }

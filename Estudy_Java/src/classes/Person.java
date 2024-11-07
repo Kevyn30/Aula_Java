@@ -38,7 +38,7 @@ public class Person {
     }
 
     public String showInfo() {
-        return "Sua idade é " + age + ". O seu nome é " + name + ". Seu email é " + email;
+        return  "Nome: " + name +", Email: " + email+", Idade:" + age+"\n";
     }
 }
 

@@ -7,9 +7,14 @@ public class App {
         );
         System.out.println("Professor:"+"\n"+teacher.showInfo());
         Student student = new Student(
-                "kevyn", "kevyn.nascimento@aluno.ce.gov.br", "1550", 17, 6
+                "kevyn", "kevyn.nascimento@aluno.ce.gov.br", "1550", 17, 10
         );
         System.out.println("Alunos: "+"\n"+student.showInfo());
+        System.out.println("Status: "+student.isApprovede());
+        SchoolClass schoolClass= new SchoolClass(
+                "kevyn","kevyn.nascimento@luno.ce.gov.br",17
+        );
+        System.out.println("Turma: "+"\n"+schoolClass.showInfo());
     }
 
     public static void information() {

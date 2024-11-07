@@ -10,6 +10,6 @@ public class Teacher extends Person {
 
     @Override
     public String showInfo() {
-        return super.showInfo() + " Materia: "+subject+"\n";
+        return super.showInfo() + "Materia: "+subject+"\n";
     }
 }

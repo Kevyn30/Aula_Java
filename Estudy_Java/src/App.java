@@ -5,16 +5,16 @@ public class App {
         Teacher teacher = new Teacher(
                 "Icaro", "icarolindo@gmail.com", "Matemática", 17
         );
-        System.out.println("Professor:"+"\n"+teacher.showInfo());
+        //System.out.println("Professor:"+"\n"+teacher.showInfo());
         Student student = new Student(
                 "kevyn", "kevyn.nascimento@aluno.ce.gov.br", "1550", 17, 10
         );
-        System.out.println("Alunos: "+"\n"+student.showInfo());
-        System.out.println("Status: "+student.isApprovede());
+        //System.out.println("Alunos: "+"\n"+student.showInfo());
+        //System.out.println("Status: "+student.isApprovede());
         SchoolClass schoolClass= new SchoolClass(
-                "kevyn","kevyn.nascimento@luno.ce.gov.br",17
+                "Mat01A",teacher
         );
-        System.out.println("Turma: "+"\n"+schoolClass.showInfo());
+        schoolClass.showClass();
     }
 
     public static void information() {

@@ -9,11 +9,13 @@ public class App {
         Student student = new Student(
                 "kevyn", "kevyn.nascimento@aluno.ce.gov.br", "1550", 17, 10
         );
+        
         //System.out.println("Alunos: "+"\n"+student.showInfo());
         //System.out.println("Status: "+student.isApprovede());
         SchoolClass schoolClass= new SchoolClass(
-                "Mat01A",teacher
+                "C-137", teacher
         );
+        schoolClass.addStudent(student);
         schoolClass.showClass();
     }
 

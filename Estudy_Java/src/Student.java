@@ -11,15 +11,11 @@ public class Student extends Person {
     }
 
     public boolean isApprovede() {
-        if (finalGrade >= 7) {
-            return true;
-        } else {
-            return false;
-        }
+        return finalGrade >= 7;
     }
 
     @Override
     public String showInfo() {
-        return super.showInfo() + "Matricula: " + registration + ", Nota Final: " + finalGrade;
+        return super.showInfo() + "Matricula: " + registration + ", Nota Final: " + finalGrade + "Status: " + isApprovede();
     }
 }

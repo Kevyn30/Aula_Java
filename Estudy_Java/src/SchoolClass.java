@@ -1,7 +1,5 @@
 import classes.Person;
 
-import javax.sound.midi.SysexMessage;
-import javax.xml.namespace.QName;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -39,9 +37,8 @@ public class SchoolClass {
     }
 
     private void printStudent(Student student) {
-        System.out.println("Aluno:" + "\n" + "Nome: " + student.getName() + ", Idade: " + student.getage() + ", Email: " + student.getemail());
-        System.out.println("Matricula: " + student.registration + ", Nota Final: " + student.finalGrade);
-        System.out.println("Status: " + student.isApprovede());
+        System.out.println("Aluno:");
+        System.out.println(student.showInfo());
         System.out.println("");
     }
 

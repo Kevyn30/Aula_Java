@@ -1,4 +1,3 @@
-import classes.Person;
 
 public class App {
     public static void main(String[] arg) {

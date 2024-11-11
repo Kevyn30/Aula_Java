@@ -9,18 +9,23 @@ public class App {
         Student student = new Student(
                 "Alice", "alice@exemplo.com", "A001", 17, 8.5);
         Student student1 = new Student(
-                "Bruno", "bruno@exemplo.com", "A002", 16, 6.0);
+                "Adrian", "adrian@exemplo.com", "A002", 15, 7.5);
+        Student student2 = new Student(
+                "Lidia", "lidia@exemplo.com", "A003", 14, 7);
+        Student student3 = new Student(
+                "Bruno", "bruno@exemplo.com", "A004", 16, 6.0);
 
-        //System.out.println("Alunos: "+"\n"+student.showInfo());
-        //System.out.println("Status: "+student.isApprovede());
         SchoolClass schoolClass = new SchoolClass(
                 "C-137", teacher
         );
-        schoolClass.addStudent(student1);
+
         schoolClass.addStudent(student);
+        schoolClass.addStudent(student1);
+        schoolClass.addStudent(student2);
+        schoolClass.addStudent(student3);
         schoolClass.showClass();
-        System.out.println("----------------------------------");
-        schoolClass.removeStudent("A002");
+        System.out.println("-----------------------------------------------------------"+"\n");
+        schoolClass.removeStudent("A00");
         schoolClass.showClass();
     }
 

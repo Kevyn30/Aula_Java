@@ -16,6 +16,6 @@ public class Student extends Person {
 
     @Override
     public String showInfo() {
-        return super.showInfo() + "Matricula: " + registration + ", Nota Final: " + finalGrade + "Status: " + isApprovede();
+        return super.showInfo() + "Matricula: " + registration + ", Nota Final: " + finalGrade +"\n" +"Status: " + isApprovede();
     }
 }

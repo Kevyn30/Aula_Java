@@ -25,8 +25,8 @@ public class SchoolClass {
 
     public void showClass() {
         System.out.print(
-                "codigo da turma: " + code + "\n"
-                        + "professro: " + "\n" + "Nome: " + teacher.getName() + ", idade: " + teacher.getage() + ", Email:" + teacher.getemail()
+                "Código da Turma: " + code + "\n"
+                        + "Professro: " + "\n" + "Nome: " + teacher.getName() + ", idade: " + teacher.getage() + ", Email:" + teacher.getemail()
                         + "\n" + "Diciplina: " + teacher.subject + "\n"
         );
         int count = 0;
@@ -37,9 +37,8 @@ public class SchoolClass {
     }
 
     private void printStudent(Student student) {
-        System.out.println("Aluno:");
         System.out.println(student.showInfo());
-        System.out.println("");
+        System.out.println("");//só pra quebrar linha entre os alunos.;
     }
 
 

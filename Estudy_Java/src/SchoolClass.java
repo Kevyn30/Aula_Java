@@ -16,7 +16,6 @@ public class SchoolClass {
     }
     public void addStudent(Student student) {
         this.students.add(student);
-
     }
 
     public void removeStudent(String registration) {

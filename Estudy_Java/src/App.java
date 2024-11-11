@@ -9,7 +9,7 @@ public class App {
         Student student = new Student(
                 "kevyn", "kevyn.nascimento@aluno.ce.gov.br", "1550", 17, 10
         );
-        
+
         //System.out.println("Alunos: "+"\n"+student.showInfo());
         //System.out.println("Status: "+student.isApprovede());
         SchoolClass schoolClass= new SchoolClass(
@@ -19,15 +19,4 @@ public class App {
         schoolClass.showClass();
     }
 
-    public static void information() {
-        String name = "pokémon";
-        String email = "fkevyn692@gmail.com";
-        int age = 17;
-        Person pokemon = new Person(name, email, age);
-        System.out.println(pokemon.showInfo());
-
-
-    }
-
 }
-

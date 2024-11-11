@@ -24,8 +24,8 @@ public class SchoolClass {
     public void showClass(){
         System.out.print(
                 "codigo da turma: "+code+"\n"
-                        +"professro: "+"\n"+"Nome:"+teacher.getName()+", idade:"+ teacher.getage()+", Email:"+teacher.getemail()
-                        +"\n"+teacher.subject+"\n"
+                        +"professro: "+"\n"+"Nome: "+teacher.getName()+", idade: "+ teacher.getage()+", Email:"+teacher.getemail()
+                        +"\n"+"Diciplina: "+teacher.subject+"\n"
         );
         int count = 0;
         while (count < students.size()){
@@ -34,7 +34,7 @@ public class SchoolClass {
         }
     }
     private void printStudent(Student student){
-        System.out.println("Aluno:"+"\n"+"Nome: "+student.getName()+", Idade: "+student.getage()+"Email: "+student.getemail());
+        System.out.println("Aluno:"+"\n"+"Nome: "+student.getName()+", Idade: "+student.getage()+", Email: "+student.getemail());
         System.out.println("Matricula: "+student.registration+", Nota Final: "+student.finalGrade);
         System.out.println("Status: "+student.isApprovede());
     }
